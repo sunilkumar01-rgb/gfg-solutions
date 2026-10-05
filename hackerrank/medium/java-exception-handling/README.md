@@ -1,4 +1,4 @@
-# Tag Content Extractor
+# Java Exception Handling
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -29,45 +29,24 @@ both $n$ and $p$ are zero, the output contains "n and p should not be zero.". Th
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T18:26:26.873Z  
+**Submitted:** 2026-10-05T18:28:42.032Z  
 
 ```java
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
-public class Solution{
-	public static void main(String[] args){
-		
-		Scanner in = new Scanner(System.in);
-		int testCases = Integer.parseInt(in.nextLine());
-		while(testCases>0){
-			String line = in.nextLine();
-			
-          	            String regex = "<(.+?)>([^<]+)</\\1>";
-            Pattern p = Pattern.compile(regex);
-            
-            Matcher m = p.matcher(line);
-            boolean found = false;
-            
-            while (m.find()) {
-                System.out.println(m.group(2));
-                found = true;
-            }
-            
-            if (!found) {
-                System.out.println("None");
-            }
-            //Write your code here
-			
-			testCases--;
-		}
-	}
+class MyCalculator {
+    /*
+    * Create the method long power(int, int) here.
+    */
+        long power(int n, int p) throws Exception {
+        if (n < 0 || p < 0) {
+            throw new Exception("n or p should not be negative.");
+        }
+        if (n == 0 && p == 0) {
+            throw new Exception("n and p should not be zero.");
+        }
+        return (long) Math.pow(n, p);
+    }
 }
-
-
 
 
 ```
