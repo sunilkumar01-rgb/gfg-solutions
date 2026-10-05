@@ -1,4 +1,4 @@
-# Java Abstract Class
+# Java Exception Handling
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -56,15 +56,22 @@ Your class mustn't be public.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T18:29:21.865Z  
+**Submitted:** 2026-10-05T18:28:44.493Z  
 
 ```java
 
-
-//Write MyBook class here
-class MyBook extends Book {
-    void setTitle(String s) {
-        title = s;
+class MyCalculator {
+    /*
+    * Create the method long power(int, int) here.
+    */
+        long power(int n, int p) throws Exception {
+        if (n < 0 || p < 0) {
+            throw new Exception("n or p should not be negative.");
+        }
+        if (n == 0 && p == 0) {
+            throw new Exception("n and p should not be zero.");
+        }
+        return (long) Math.pow(n, p);
     }
 }
 
