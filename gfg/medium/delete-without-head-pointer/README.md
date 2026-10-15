@@ -31,7 +31,7 @@ Explanation: After deleting 20 from the linked list, we have remaining nodes as 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:11:14.419Z  
+**Submitted:** 2026-10-15T17:27:45.307Z  
 
 ```java
 class Solution {
