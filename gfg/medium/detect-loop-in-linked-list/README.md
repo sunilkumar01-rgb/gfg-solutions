@@ -38,7 +38,7 @@ Explanation: There exists a loop as last node is connected back to the first nod
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:14:51.451Z  
+**Submitted:** 2026-10-15T17:30:39.862Z  
 
 ```java
 class Solution {
