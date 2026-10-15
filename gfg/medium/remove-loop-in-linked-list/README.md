@@ -38,7 +38,7 @@ Explanation: The linked list contains a loop that begins at node x = 1. After re
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:16:15.067Z  
+**Submitted:** 2026-10-15T17:32:18.178Z  
 
 ```java
 class Solution {
