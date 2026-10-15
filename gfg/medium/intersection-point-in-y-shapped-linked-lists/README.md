@@ -33,7 +33,7 @@ Explanation: From the image, it is clear that the common part is 1 -> 8 -> 5, an
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:17:48.306Z  
+**Submitted:** 2026-10-15T17:34:00.331Z  
 
 ```java
 class Solution {
