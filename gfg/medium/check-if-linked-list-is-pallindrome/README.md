@@ -28,7 +28,7 @@ Explanation: The given linked list is 10 -> 20 -> 30 -> 40 -> 50, which is not a
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:14:11.852Z  
+**Submitted:** 2026-10-15T17:29:41.012Z  
 
 ```java
 class Solution {
