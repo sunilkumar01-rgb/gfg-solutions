@@ -29,7 +29,7 @@ Explanation:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:10:26.600Z  
+**Submitted:** 2026-10-15T17:26:30.992Z  
 
 ```java
 class Solution {
