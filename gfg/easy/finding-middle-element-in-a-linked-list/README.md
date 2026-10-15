@@ -32,7 +32,7 @@ Explanation: The given linked list is 2->4->6->7->5->1 so, there are two middle 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T17:12:07.613Z  
+**Submitted:** 2026-10-15T17:28:49.599Z  
 
 ```java
 class Solution {
