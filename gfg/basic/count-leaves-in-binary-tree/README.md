@@ -45,7 +45,7 @@ Explanation: Three leaves are 20, 27 and 40.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T17:56:43.635Z  
+**Submitted:** 2026-10-16T17:57:09.512Z  
 
 ```java
 class Solution {
