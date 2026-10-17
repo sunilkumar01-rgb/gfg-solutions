@@ -29,7 +29,7 @@ Explanation: The inorder traversal of the given binary tree is [1, 7, 10, 8, 6, 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-17T17:59:12.131Z  
+**Submitted:** 2026-10-17T17:59:34.990Z  
 
 ```java
 class Solution {
