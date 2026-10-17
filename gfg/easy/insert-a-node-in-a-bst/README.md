@@ -31,7 +31,7 @@ Explanation: After inserting the node 4, the new tree will be [2, 1, 3, N, N, N,
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-17T18:07:21.868Z  
+**Submitted:** 2026-10-17T18:07:43.736Z  
 
 ```java
 class Solution {
