@@ -53,8 +53,8 @@ Output: []
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 93.38%)  
-**Memory:** 45.3 MB (beats 92.90%)  
-**Submitted:** 2026-10-19T12:46:50.863Z  
+**Memory:** 45.2 MB (beats 95.73%)  
+**Submitted:** 2026-10-19T12:47:11.377Z  
 
 ```java
 class Solution {
