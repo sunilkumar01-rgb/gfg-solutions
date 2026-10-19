@@ -54,7 +54,7 @@ Explanation: Nothing is read after -12 as a non-digit character ‘g’ was enco
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T16:50:53.592Z  
+**Submitted:** 2026-10-19T16:51:26.252Z  
 
 ```java
 class Solution {
