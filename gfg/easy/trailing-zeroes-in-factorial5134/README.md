@@ -25,7 +25,7 @@ Explanation: 4! = 24 so the number of trailing zero is 0.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T17:02:38.490Z  
+**Submitted:** 2026-10-19T17:02:56.311Z  
 
 ```java
 class Solution {
