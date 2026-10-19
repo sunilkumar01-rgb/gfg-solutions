@@ -39,7 +39,7 @@ The string contains only lowercase letters.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T16:54:37.374Z  
+**Submitted:** 2026-10-19T16:54:53.365Z  
 
 ```java
 class Solution {
