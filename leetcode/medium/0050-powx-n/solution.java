@@ -7,17 +7,18 @@ class Solution {
             N = -N;
         }
         
-        double ans = 1;
-        double currentProduct = x;
+        return power(x, N);
+    }
+    
+    private double power(double x, long n) {
+        if (n == 0) return 1.0;
         
-        while (N > 0) {
-            if (N % 2 == 1) {
-                ans = ans * currentProduct;
-            }
-            currentProduct = currentProduct * currentProduct;
-            N = N / 2;
+        double half = power(x, n / 2);
+        
+        if (n % 2 == 0) {
+            return half * half;
+        } else {
+            return half * half * x;
         }
-        
-        return ans;
     }
 }
