@@ -54,9 +54,9 @@ Since the largest window of s only has one 'a', return empty string.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 24 ms (beats 23.65%)  
-**Memory:** 47.2 MB (beats 39.75%)  
-**Submitted:** 2026-10-21T17:17:52.341Z  
+**Runtime:** 23 ms (beats 25.06%)  
+**Memory:** 46.5 MB (beats 55.37%)  
+**Submitted:** 2026-10-21T17:18:15.909Z  
 
 ```java
 class Solution {
