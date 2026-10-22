@@ -47,8 +47,8 @@ Ashe is poisoned for seconds 1, 2, and 3, which is 3 seconds in total.
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 89.48%)  
-**Memory:** 48.2 MB (beats 71.18%)  
-**Submitted:** 2026-10-22T16:21:16.337Z  
+**Memory:** 48 MB (beats 89.37%)  
+**Submitted:** 2026-10-22T16:21:40.255Z  
 
 ```java
 class Solution {
