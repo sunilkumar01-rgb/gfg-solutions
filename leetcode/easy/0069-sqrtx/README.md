@@ -40,8 +40,8 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 21.15%)  
-**Memory:** 42.2 MB (beats 89.81%)  
-**Submitted:** 2026-10-22T16:14:01.248Z  
+**Memory:** 42.4 MB (beats 72.52%)  
+**Submitted:** 2026-10-22T16:14:21.431Z  
 
 ```java
 class Solution {
