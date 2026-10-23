@@ -33,7 +33,7 @@ Explanation: 1st Largest element in the array is 23.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T18:05:50.253Z  
+**Submitted:** 2026-10-23T18:06:10.685Z  
 
 ```java
 class Solution {
