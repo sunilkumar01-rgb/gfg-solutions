@@ -37,7 +37,7 @@ Explanation: Every window of size 3 in the array [1, 1, 1, 1, 1], contains only 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T17:17:43.076Z  
+**Submitted:** 2026-10-24T17:18:19.464Z  
 
 ```java
 import java.util.*;
