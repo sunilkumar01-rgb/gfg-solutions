@@ -54,9 +54,9 @@ Explanation: The balloons can be burst by 2 arrows:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 54 ms (beats 30.17%)  
-**Memory:** 95.1 MB (beats 89.06%)  
-**Submitted:** 2026-10-25T17:37:43.497Z  
+**Runtime:** 0 ms  
+**Memory:** 42 MB  
+**Submitted:** 2026-10-25T17:36:47.633Z  
 
 ```java
 class Solution {
