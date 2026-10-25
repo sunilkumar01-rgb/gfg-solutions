@@ -32,7 +32,7 @@ Explanation: Binary representation of the given numbers are: 29 in binary is 111
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T17:26:39.393Z  
+**Submitted:** 2026-10-25T17:27:31.946Z  
 
 ```java
 class Solution {
