@@ -32,7 +32,7 @@ Explanation: Binary representation of  1 is 1, the first set bit from the right 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T17:25:17.283Z  
+**Submitted:** 2026-10-25T17:25:44.479Z  
 
 ```java
 class Solution {
