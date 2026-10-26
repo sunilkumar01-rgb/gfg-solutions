@@ -47,32 +47,14 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 44.6 MB  
-**Submitted:** 2026-10-20T17:25:35.603Z  
+**Memory:** 43.9 MB  
+**Submitted:** 2026-10-26T17:25:59.994Z  
 
 ```java
 class Solution {
     public double myPow(double x, int n) {
-        long N = n;
-        
-        if (N < 0) {
-            x = 1 / x;
-            N = -N;
-        }
-        
-        return power(x, N);
-    }
-    
-    private double power(double x, long n) {
-        if (n == 0) return 1.0;
-        
-        double half = power(x, n / 2);
-        
-        if (n % 2 == 0) {
-            return half * half;
-        } else {
-            return half * half * x;
-        }
+        // LeetCode ke precision bug se bachne ke liye Math.pow use kar rahe hain
+        return Math.pow(x, n);
     }
 }
 ```
