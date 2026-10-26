@@ -47,7 +47,7 @@ myHashSet.contains(2); // return False, (already removed)
 **Language:** Java  
 **Runtime:** 13 ms (beats 62.41%)  
 **Memory:** 53.6 MB (beats 77.70%)  
-**Submitted:** 2026-10-26T17:23:19.781Z  
+**Submitted:** 2026-10-26T17:23:46.148Z  
 
 ```java
 class MyHashSet {
