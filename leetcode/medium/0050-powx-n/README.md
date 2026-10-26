@@ -46,9 +46,9 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 43.9 MB  
-**Submitted:** 2026-10-26T17:25:59.994Z  
+**Runtime:** 1 ms (beats 19.47%)  
+**Memory:** 47.8 MB (beats 58.54%)  
+**Submitted:** 2026-10-26T17:26:05.991Z  
 
 ```java
 class Solution {
