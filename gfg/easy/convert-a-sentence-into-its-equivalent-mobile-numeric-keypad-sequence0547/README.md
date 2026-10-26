@@ -29,7 +29,7 @@ Explanation: For 'H', press '4' two times. For 'E', press '3' two times. For 'Y'
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T17:31:15.507Z  
+**Submitted:** 2026-10-26T17:31:34.733Z  
 
 ```java
 class Solution {
