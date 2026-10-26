@@ -56,9 +56,9 @@ myCircularQueue.Rear();     // return 4
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 100.00%)  
-**Memory:** 45.9 MB (beats 95.00%)  
-**Submitted:** 2026-10-26T17:22:27.233Z  
+**Runtime:** 5 ms (beats 36.14%)  
+**Memory:** 46.3 MB (beats 80.95%)  
+**Submitted:** 2026-10-26T17:22:45.098Z  
 
 ```java
 class MyCircularQueue {
