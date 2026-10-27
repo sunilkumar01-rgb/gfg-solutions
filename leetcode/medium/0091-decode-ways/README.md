@@ -73,8 +73,8 @@ The test cases are generated so that the answer fits in a  **32-bit**  integer.
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 11.35%)  
-**Memory:** 43 MB (beats 57.75%)  
-**Submitted:** 2026-10-27T14:17:35.664Z  
+**Memory:** 42.8 MB (beats 78.83%)  
+**Submitted:** 2026-10-27T14:17:51.400Z  
 
 ```java
 class Solution {
