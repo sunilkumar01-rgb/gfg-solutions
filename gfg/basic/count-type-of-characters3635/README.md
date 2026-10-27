@@ -32,7 +32,7 @@ Explanation: There are 6 uppercase characters, 4 lowercase characters, 1 numeric
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T17:35:03.841Z  
+**Submitted:** 2026-10-26T17:35:05.706Z  
 
 ```java
 class Sol {
