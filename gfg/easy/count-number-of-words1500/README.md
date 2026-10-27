@@ -29,7 +29,7 @@ Explanation: There are two words in the string: "a" and "yo". The characters \n 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-27T09:57:53.589Z  
+**Submitted:** 2026-10-27T09:58:01.208Z  
 
 ```java
 class Solution {
