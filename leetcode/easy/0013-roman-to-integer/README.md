@@ -68,8 +68,8 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 **Language:** Java  
 **Runtime:** 8 ms (beats 8.60%)  
-**Memory:** 45.9 MB (beats 94.86%)  
-**Submitted:** 2026-10-27T14:14:30.277Z  
+**Memory:** 45.9 MB (beats 92.12%)  
+**Submitted:** 2026-10-27T14:14:39.165Z  
 
 ```java
 class Solution {
