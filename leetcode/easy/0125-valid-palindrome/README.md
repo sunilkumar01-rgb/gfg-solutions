@@ -48,9 +48,9 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-10-28T09:41:18.172Z  
+**Runtime:** 3 ms (beats 61.23%)  
+**Memory:** 44 MB (beats 84.84%)  
+**Submitted:** 2026-10-28T09:43:10.030Z  
 
 ```java
 class Solution {
@@ -61,7 +61,7 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<s.length();i++){
             char ch = s.charAt(i);
-            if((ch>='A' && ch<='Z') || (ch>='a' && ch<='Z' || (ch>='0' && ch<='9'))){
+            if((ch>='A' && ch<='Z') || (ch>='a' && ch<='z' || (ch>='0' && ch<='9'))){
                 if(ch>='A' && ch<='Z'){
                     ch=(char)('a'+ ch-'A');
                 }
