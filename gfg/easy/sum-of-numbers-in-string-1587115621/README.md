@@ -30,7 +30,7 @@ The sum of Numbers ≤ 105
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T10:31:53.691Z  
+**Submitted:** 2026-10-28T10:40:58.415Z  
 
 ```java
 class Solution {
