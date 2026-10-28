@@ -1,18 +1,25 @@
 class Solution {
-    public static long findSum(String str) {
-        long sum = 0;
-        long num = 0;
-
-        for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
-            if (Character.isDigit(c)) {
-                num = num * 10 + (c - '0');
-            } else {
-                sum += num;
-                num = 0;
-            }
-        }
-        sum += num;
-        return sum;
+    public static long findSum(String s) {
+       int sum=0;
+       int i=0;
+       
+       int n=s.length();
+       while(i<n){
+           char ch=s.charAt(i);
+           if(ch>='0' && ch <='9'){
+               int num=ch-'0';
+               int j=i+1;
+               while(j<n && s.charAt(j)>='0' && s.charAt(j)<='9'){
+                   num=num*10+s.charAt(j)-'0';
+                   j++;
+               }
+               i=j;
+               sum+=num;
+           }
+           else{
+               i++;
+           }
+       }
+       return sum;
     }
 }
