@@ -36,7 +36,7 @@ Explanation: Applying same technique as shown above, output will be [32, 44, 27,
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-29T20:12:22.562Z  
+**Submitted:** 2026-10-29T20:12:38.040Z  
 
 ```java
 class Solution {
