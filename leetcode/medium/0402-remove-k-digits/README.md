@@ -47,8 +47,8 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 
 **Language:** Java  
 **Runtime:** 19 ms (beats 59.25%)  
-**Memory:** 47.4 MB (beats 46.65%)  
-**Submitted:** 2026-10-29T20:09:17.056Z  
+**Memory:** 47 MB (beats 55.41%)  
+**Submitted:** 2026-10-29T20:09:42.193Z  
 
 ```java
 class Solution {
