@@ -39,8 +39,8 @@ Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 52.73%)  
-**Memory:** 54.6 MB (beats 22.24%)  
-**Submitted:** 2026-10-29T20:07:58.406Z  
+**Memory:** 54.8 MB (beats 16.17%)  
+**Submitted:** 2026-10-29T20:08:19.800Z  
 
 ```java
 class Solution {
