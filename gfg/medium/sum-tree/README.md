@@ -29,7 +29,7 @@ Explanation: The given tree is not a Sum Tree. For the root node, the sum of nod
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-29T20:15:11.821Z  
+**Submitted:** 2026-10-29T20:15:37.847Z  
 
 ```java
 class Solution {
