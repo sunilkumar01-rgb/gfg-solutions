@@ -39,7 +39,7 @@ Explanation: There are no possible solutions for n = 3.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-29T16:11:36.603Z  
+**Submitted:** 2026-10-29T16:12:01.001Z  
 
 ```java
 class Solution {
