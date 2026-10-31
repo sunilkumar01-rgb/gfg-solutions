@@ -28,7 +28,7 @@ Explanation: 't' and 'u' are the characters with the same frequency, but 't' is 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-20T17:42:14.598Z  
+**Submitted:** 2026-10-31T09:33:30.586Z  
 
 ```java
 class Solution {
