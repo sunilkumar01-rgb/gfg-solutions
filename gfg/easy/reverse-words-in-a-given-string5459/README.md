@@ -34,7 +34,7 @@ Explanation: The input string contains only one word with extra dots around it. 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-31T09:15:38.771Z  
+**Submitted:** 2026-10-31T09:18:39.494Z  
 
 ```java
 class Solution {
