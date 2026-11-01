@@ -48,8 +48,8 @@ randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom()
 
 **Language:** Java  
 **Runtime:** 27 ms (beats 55.53%)  
-**Memory:** 100.4 MB (beats 54.63%)  
-**Submitted:** 2026-11-01T15:09:32.080Z  
+**Memory:** 100.2 MB (beats 63.60%)  
+**Submitted:** 2026-11-01T15:10:18.832Z  
 
 ```java
 class RandomizedSet {
