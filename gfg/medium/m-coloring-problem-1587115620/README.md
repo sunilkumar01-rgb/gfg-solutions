@@ -39,7 +39,7 @@ Explanation: It is not possible to color the given graph using only 2 colors bec
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:22:09.143Z  
+**Submitted:** 2026-11-01T15:22:14.829Z  
 
 ```java
 class Solution {
