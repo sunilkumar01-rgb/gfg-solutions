@@ -29,7 +29,7 @@ Explanation: The user collects the maximum value as 22(7 + 15). It is guaranteed
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:23:35.221Z  
+**Submitted:** 2026-11-01T15:24:09.076Z  
 
 ```java
 class Solution {
