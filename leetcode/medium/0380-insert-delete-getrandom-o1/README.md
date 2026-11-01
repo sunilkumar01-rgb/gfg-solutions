@@ -47,9 +47,9 @@ randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom()
 ## Solution
 
 **Language:** Java  
-**Runtime:** 27 ms (beats 55.53%)  
-**Memory:** 100.2 MB (beats 63.60%)  
-**Submitted:** 2026-11-01T15:10:18.832Z  
+**Runtime:** 26 ms (beats 76.51%)  
+**Memory:** 100.2 MB (beats 58.82%)  
+**Submitted:** 2026-11-01T15:14:13.068Z  
 
 ```java
 class RandomizedSet {
