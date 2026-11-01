@@ -37,7 +37,7 @@ From 1 to 2 shortest distance should be 3 by following path 1 -> 0 -> 2
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:38:28.545Z  
+**Submitted:** 2026-11-01T15:39:10.156Z  
 
 ```java
 class Solution {
