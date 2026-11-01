@@ -25,7 +25,7 @@ Explanation: By removing a single character we cannot make it a palindrome.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:29:25.388Z  
+**Submitted:** 2026-11-01T15:30:25.506Z  
 
 ```java
 class Solution {
