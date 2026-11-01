@@ -33,7 +33,7 @@ Explanation: It is not possible to buy 5 kgs.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:25:37.274Z  
+**Submitted:** 2026-11-01T15:25:46.447Z  
 
 ```java
 class Solution {
