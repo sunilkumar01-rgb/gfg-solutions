@@ -39,8 +39,8 @@ Output: [["Q"]]
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 81.00%)  
-**Memory:** 46.2 MB (beats 78.34%)  
-**Submitted:** 2026-11-02T12:59:10.232Z  
+**Memory:** 46.2 MB (beats 84.39%)  
+**Submitted:** 2026-11-02T12:59:23.166Z  
 
 ```java
 class Solution {
