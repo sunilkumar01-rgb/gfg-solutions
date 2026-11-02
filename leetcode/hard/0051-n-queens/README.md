@@ -38,9 +38,9 @@ Output: [["Q"]]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 81.00%)  
-**Memory:** 46.2 MB (beats 84.39%)  
-**Submitted:** 2026-11-02T12:59:23.166Z  
+**Runtime:** 3 ms (beats 35.57%)  
+**Memory:** 46.1 MB (beats 84.39%)  
+**Submitted:** 2026-11-02T12:59:36.347Z  
 
 ```java
 class Solution {
