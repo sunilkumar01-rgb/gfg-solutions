@@ -36,7 +36,7 @@ Explanation: 19 is a lucky number because it does not get deleted throughout the
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T13:04:41.840Z  
+**Submitted:** 2026-11-02T13:04:57.164Z  
 
 ```java
 class Solution {
