@@ -32,7 +32,7 @@ Explanation: Since there is only one rope, no connections are needed, so the cos
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-05T16:20:22.503Z  
+**Submitted:** 2026-11-05T16:06:54.192Z  
 
 ```java
 class Solution {
