@@ -53,9 +53,9 @@ Note that square 2 only brushes the right side of square 1, which does not count
 ## Solution
 
 **Language:** Java  
-**Runtime:** 45 ms (beats 21.58%)  
-**Memory:** 45.7 MB (beats 99.66%)  
-**Submitted:** 2026-11-06T17:13:25.796Z  
+**Runtime:** 48 ms (beats 14.38%)  
+**Memory:** 46.1 MB (beats 90.07%)  
+**Submitted:** 2026-11-06T17:13:39.181Z  
 
 ```java
 class Solution {
