@@ -32,13 +32,13 @@ Explanation: The subarray [5, 4, 1, 7, 8] has the largest sum 25.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T18:31:47.231Z  
+**Submitted:** 2026-11-06T17:20:53.630Z  
 
 ```java
 class Solution {
     int maxSubarraySum(int[] arr) {
-        int currentSum = arr[0];
         int maxSum = arr[0];
+        int currentSum = arr[0];
 
         for (int i = 1; i < arr.length; i++) {
             currentSum = Math.max(arr[i], currentSum + arr[i]);
