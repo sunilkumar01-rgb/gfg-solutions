@@ -38,16 +38,18 @@ Binary representation is '11', so the count of the set bit is 2.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T16:59:27.273Z  
+**Submitted:** 2026-11-06T17:22:49.761Z  
 
 ```java
 class Solution {
     public int setBits(int n) {
         int count = 0;
+
         while (n > 0) {
-            n = n & (n - 1);
-            count++;
+            count += (n & 1);
+            n >>= 1;
         }
+
         return count;
     }
 }
