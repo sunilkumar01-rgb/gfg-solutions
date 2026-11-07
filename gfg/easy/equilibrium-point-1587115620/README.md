@@ -34,19 +34,22 @@ Explanation: The sum of left of index 3 is -7 + 1 + 5 = -1 and sum on right of i
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T18:33:18.556Z  
+**Submitted:** 2026-11-07T17:00:30.644Z  
 
 ```java
 class Solution {
-    public static int findEquilibrium(int[] arr) {
-        long total = 0;
-        for (int num : arr) total += num;
+    public static int findEquilibrium(int arr[]) {
+        int totalSum = 0;
+        int leftSum = 0;
 
-        long leftSum = 0;
+        for (int num : arr) {
+            totalSum += num;
+        }
+
         for (int i = 0; i < arr.length; i++) {
-            long rightSum = total - leftSum - arr[i];
+            totalSum -= arr[i];
 
-            if (leftSum == rightSum) {
+            if (leftSum == totalSum) {
                 return i;
             }
 
