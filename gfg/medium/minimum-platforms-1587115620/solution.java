@@ -1,20 +1,24 @@
 class Solution {
-    static int minPlatform(int[] arr, int[] dep) {
+    static int minPlatform(int arr[], int dep[]) {
         Arrays.sort(arr);
         Arrays.sort(dep);
-        int i = 0, j = 0, platforms = 0, maxPlatforms = 0;
-        int n = arr.length;
 
-        while (i < n && j < n) {
+        int i = 1, j = 0;
+        int platforms = 1;
+        int ans = 1;
+
+        while (i < arr.length && j < dep.length) {
             if (arr[i] <= dep[j]) {
                 platforms++;
-                maxPlatforms = Math.max(maxPlatforms, platforms);
                 i++;
             } else {
                 platforms--;
                 j++;
             }
+
+            ans = Math.max(ans, platforms);
         }
-        return maxPlatforms;
+
+        return ans;
     }
 }
