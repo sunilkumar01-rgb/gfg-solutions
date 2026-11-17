@@ -33,7 +33,7 @@ Explanation: 5 is represented as "101" in binary. It has two set bits; therefore
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-17T17:24:19.375Z  
+**Submitted:** 2026-11-17T17:27:53.507Z  
 
 ```java
 class Solution {
