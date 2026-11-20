@@ -40,8 +40,8 @@ Explanation: 1 has no prime factors, therefore all of its prime factors are limi
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 67.17%)  
-**Memory:** 43.1 MB (beats 66.57%)  
-**Submitted:** 2026-11-20T17:43:21.252Z  
+**Memory:** 42.7 MB (beats 92.90%)  
+**Submitted:** 2026-11-20T17:44:08.297Z  
 
 ```java
 class Solution {
