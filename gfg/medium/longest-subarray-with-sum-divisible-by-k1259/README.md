@@ -34,9 +34,11 @@ Explanation: The subarray is [2, -2] has sum = 0, which is divisible by 2.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-20T17:47:00.139Z  
+**Submitted:** 2026-11-20T17:34:30.527Z  
 
 ```java
+import java.util.HashMap;
+
 class Solution {
     public int longestSubarrayDivK(int[] arr, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -49,6 +51,7 @@ class Solution {
             sum += arr[i];
             int rem = (int)(sum % k);
 
+            // Negative remainder ko positive banane ke liye
             if (rem < 0) {
                 rem += k;
             }
@@ -59,6 +62,7 @@ class Solution {
                 map.put(rem, i);
             }
         }
+
         return maxLen;
     }
 }
