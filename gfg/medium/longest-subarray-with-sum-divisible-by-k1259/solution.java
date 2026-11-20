@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Solution {
     public int longestSubarrayDivK(int[] arr, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -10,6 +12,7 @@ class Solution {
             sum += arr[i];
             int rem = (int)(sum % k);
 
+            // Negative remainder ko positive banane ke liye
             if (rem < 0) {
                 rem += k;
             }
@@ -20,6 +23,7 @@ class Solution {
                 map.put(rem, i);
             }
         }
+
         return maxLen;
     }
 }
