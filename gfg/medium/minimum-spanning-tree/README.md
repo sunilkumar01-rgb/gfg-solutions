@@ -31,55 +31,48 @@ Explanation: Only one Spanning Tree is possible which has a weight of 5.
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T18:55:00.669Z  
+**Submitted:** 2026-11-20T17:38:33.360Z  
 
-```cpp
+```java
+import java.util.*;
+
 class Solution {
-  public:
-    int primMST(vector<vector<vector<int>>> &adj) {
+    static int primMST(ArrayList<ArrayList<ArrayList<Integer>>> adj) {
         int V = adj.size();
+        boolean[] visited = new boolean[V];
 
-        vector<int> key(V, INT_MAX);
-        vector<bool> mst(V, false);
+        // PriorityQueue stores {weight, node}
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        pq.add(new int[]{0, 0}); // Start with node 0, weight 0
 
-        priority_queue<
-            pair<int, int>,
-            vector<pair<int, int>>,
-            greater<pair<int, int>>
-        > pq;
+        int mstWeight = 0;
 
-        key[0] = 0;
-        pq.push({0, 0});
+        while (!pq.isEmpty()) {
+            int[] curr = pq.poll();
+            int weight = curr[0];
+            int node = curr[1];
 
-        int sum = 0;
+            if (visited[node]) continue;
 
-        while (!pq.empty()) {
-            int wt = pq.top().first;
-            int u = pq.top().second;
-            pq.pop();
+            visited[node] = true;
+            mstWeight += weight;
 
-            if (mst[u]) continue;
+            for (ArrayList<Integer> edge : adj.get(node)) {
+                int neighbor = edge.get(0);
+                int edgeWeight = edge.get(1);
 
-            mst[u] = true;
-            sum += wt;
-
-            for (auto it : adj[u]) {
-                int v = it[0];
-                int weight = it[1];
-
-                if (!mst[v] && weight < key[v]) {
-                    key[v] = weight;
-                    pq.push({weight, v});
+                if (!visited[neighbor]) {
+                    pq.add(new int[]{edgeWeight, neighbor});
                 }
             }
         }
 
-        return sum;
+        return mstWeight;
     }
-};
+}
 ```
 
 ---
