@@ -39,9 +39,9 @@ Explanation: 1 has no prime factors, therefore all of its prime factors are limi
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 34.17%)  
-**Memory:** 43 MB (beats 72.72%)  
-**Submitted:** 2026-11-20T17:29:11.840Z  
+**Runtime:** 3 ms (beats 67.17%)  
+**Memory:** 43.1 MB (beats 66.57%)  
+**Submitted:** 2026-11-20T17:43:21.252Z  
 
 ```java
 class Solution {
