@@ -1,22 +1,14 @@
+import java.util.*;
+
 class Solution {
-    public boolean isCyclic(int V, int[][] edges) {
-        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < V; i++) {
-            adj.add(new ArrayList<>());
-        }
-
-        for (int[] edge : edges) {
-            adj.get(edge[0]).add(edge[1]);
-        }
-
+    public boolean isCyclic(ArrayList<ArrayList<Integer>> adj) {
+        int V = adj.size();
         boolean[] visited = new boolean[V];
         boolean[] pathVisited = new boolean[V];
 
         for (int i = 0; i < V; i++) {
             if (!visited[i]) {
-                if (dfs(i, adj, visited, pathVisited)) {
-                    return true;
-                }
+                if (dfs(i, adj, visited, pathVisited)) return true;
             }
         }
         return false;
@@ -28,9 +20,7 @@ class Solution {
 
         for (int neighbor : adj.get(node)) {
             if (!visited[neighbor]) {
-                if (dfs(neighbor, adj, visited, pathVisited)) {
-                    return true;
-                }
+                if (dfs(neighbor, adj, visited, pathVisited)) return true;
             } else if (pathVisited[neighbor]) {
                 return true;
             }
