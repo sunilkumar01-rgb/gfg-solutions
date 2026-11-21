@@ -30,9 +30,11 @@ The prime numbers between 2 and 5 are 2, 3 and 5.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T17:01:50.745Z  
+**Submitted:** 2026-11-21T17:18:45.869Z  
 
 ```java
+import java.util.*;
+
 class Solution {
     public List<Integer> primeRange(int l, int r) {
         List<Integer> ans = new ArrayList<>();
@@ -48,11 +50,11 @@ class Solution {
 
     private boolean isPrime(int n) {
         if (n <= 1) return false;
-        if (n == 2) return true;
-        if (n % 2 == 0) return false;
+        if (n <= 3) return true;
+        if (n % 2 == 0 || n % 3 == 0) return false;
 
-        for (int i = 3; i * i <= n; i += 2) {
-            if (n % i == 0) return false;
+        for (int i = 5; i * i <= n; i += 6) {
+            if (n % i == 0 || n % (i + 2) == 0) return false;
         }
         return true;
     }
