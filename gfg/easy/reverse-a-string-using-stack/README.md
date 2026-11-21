@@ -27,13 +27,23 @@ Output: keeG
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T17:30:38.704Z  
+**Submitted:** 2026-11-21T17:22:19.894Z  
 
 ```java
 class Solution {
     public String reverse(String S) {
-        StringBuilder sb = new StringBuilder(S);
-        return sb.reverse().toString();
+        char[] arr = S.toCharArray();
+        int left = 0, right = arr.length - 1;
+
+        while (left < right) {
+            char temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+
+        return new String(arr);
     }
 }
 ```
