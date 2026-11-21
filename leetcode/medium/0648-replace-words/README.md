@@ -47,9 +47,9 @@ Output: "a a b c"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 13 ms (beats 61.55%)  
-**Memory:** 65.1 MB (beats 35.03%)  
-**Submitted:** 2026-11-21T17:15:27.562Z  
+**Runtime:** 12 ms (beats 69.07%)  
+**Memory:** 65.4 MB (beats 29.94%)  
+**Submitted:** 2026-11-21T17:23:37.770Z  
 
 ```java
 class Solution {
