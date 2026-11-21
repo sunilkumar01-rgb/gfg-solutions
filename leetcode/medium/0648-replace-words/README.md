@@ -48,8 +48,8 @@ Output: "a a b c"
 
 **Language:** Java  
 **Runtime:** 12 ms (beats 69.07%)  
-**Memory:** 65.3 MB (beats 31.53%)  
-**Submitted:** 2026-11-21T17:23:48.287Z  
+**Memory:** 65.4 MB (beats 29.94%)  
+**Submitted:** 2026-11-21T17:43:28.018Z  
 
 ```java
 class Solution {
