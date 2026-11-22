@@ -35,7 +35,7 @@ Explanation: palindromic subsequence are : 'b'
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-21T17:22:52.548Z  
+**Submitted:** 2026-11-22T17:03:36.733Z  
 
 ```java
 class Solution {
