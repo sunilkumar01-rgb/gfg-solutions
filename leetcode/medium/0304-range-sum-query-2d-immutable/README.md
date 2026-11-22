@@ -49,9 +49,9 @@ numMatrix.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)
 ## Solution
 
 **Language:** Java  
-**Runtime:** 93 ms (beats 98.70%)  
-**Memory:** 141.6 MB (beats 55.95%)  
-**Submitted:** 2026-11-22T17:11:32.449Z  
+**Runtime:** 106 ms (beats 40.84%)  
+**Memory:** 142 MB (beats 32.02%)  
+**Submitted:** 2026-11-22T17:12:12.924Z  
 
 ```java
 class NumMatrix {
