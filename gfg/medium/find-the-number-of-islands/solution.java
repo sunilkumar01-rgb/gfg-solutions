@@ -1,37 +1,32 @@
 class Solution {
     public int countIslands(char[][] grid) {
         if (grid == null || grid.length == 0) return 0;
-
-        int n = grid.length;
-        int m = grid[0].length;
         int count = 0;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (grid[i][j] == 'L') {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 'L') { // GFG me 'L' for Land hota hai
                     count++;
-                    dfs(grid, i, j, n, m);
+                    dfs(grid, i, j);
                 }
             }
         }
-
         return count;
     }
 
-    private void dfs(char[][] grid, int i, int j, int n, int m) {
-        if (i < 0 || i >= n || j < 0 || j >= m || grid[i][j] != 'L') {
+    private void dfs(char[][] grid, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] != 'L') {
             return;
         }
 
-        // Mark as visited (water) so we don't visit again
-        grid[i][j] = 'W';
+        grid[i][j] = 'W'; // Mark visited by changing to Water
 
-        // 8 directions (horizontal, vertical, diagonal)
-        int[] rowDir = {-1, -1, -1, 0, 0, 1, 1, 1};
-        int[] colDir = {-1, 0, 1, -1, 1, -1, 0, 1};
+        // GFG ke is specific problem me 8 directions allowed hain
+        int[] dx = {-1, -1, -1, 0, 0, 1, 1, 1};
+        int[] dy = {-1, 0, 1, -1, 1, -1, 0, 1};
 
         for (int k = 0; k < 8; k++) {
-            dfs(grid, i + rowDir[k], j + colDir[k], n, m);
+            dfs(grid, i + dx[k], j + dy[k]);
         }
     }
 }
