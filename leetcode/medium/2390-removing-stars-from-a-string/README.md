@@ -54,9 +54,9 @@ Explanation: The entire string is removed, so we return an empty string.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 72 ms (beats 40.50%)  
+**Runtime:** 73 ms (beats 39.57%)  
 **Memory:** 47.5 MB (beats 79.43%)  
-**Submitted:** 2026-11-23T17:58:27.136Z  
+**Submitted:** 2026-11-23T18:09:06.111Z  
 
 ```java
 class Solution {
