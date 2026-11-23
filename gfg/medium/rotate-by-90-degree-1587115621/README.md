@@ -24,36 +24,29 @@ Output: [[2, 4], [1, 3]]
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:08:42.866Z  
+**Submitted:** 2026-11-23T18:03:31.481Z  
 
 ```java
 class Solution {
     public void rotateMatrix(int[][] mat) {
-
         int n = mat.length;
 
         // Step 1: Transpose the matrix
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-
                 int temp = mat[i][j];
                 mat[i][j] = mat[j][i];
                 mat[j][i] = temp;
             }
         }
 
-        // Step 2: Reverse every column
+        // Step 2: Reverse every column (Anti-clockwise ke liye)
         for (int j = 0; j < n; j++) {
-
-            int top = 0;
-            int bottom = n - 1;
-
+            int top = 0, bottom = n - 1;
             while (top < bottom) {
-
                 int temp = mat[top][j];
                 mat[top][j] = mat[bottom][j];
                 mat[bottom][j] = temp;
-
                 top++;
                 bottom--;
             }
