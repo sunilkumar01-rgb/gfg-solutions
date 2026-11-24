@@ -33,38 +33,32 @@ Explanation: It is not possible to buy 5 kgs.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T15:25:46.447Z  
+**Submitted:** 2026-11-24T17:03:24.744Z  
 
 ```java
+import java.util.Arrays;
+
 class Solution {
     public int minimumCost(int[] cost, int w) {
-
         int n = cost.length;
-        int INF = 1_000_000_000;
-
         int[] dp = new int[w + 1];
-        dp[0] = 0;
 
+        // dp array ko infinity se initialize karo
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = 0; // 0 weight ke liye 0 cost
+
+        // Standard Unbounded Knapsack logic
         for (int i = 1; i <= w; i++) {
-            dp[i] = INF;
-        }
-
-        for (int weight = 1; weight <= w; weight++) {
-
-            for (int i = 0; i < n && i < weight; i++) {
-
-                if (cost[i] != -1 &&
-                    dp[weight - (i + 1)] != INF) {
-
-                    dp[weight] = Math.min(
-                        dp[weight],
-                        dp[weight - (i + 1)] + cost[i]
-                    );
+            for (int j = 1; j <= n; j++) {
+                // Agar current packet available hai aur uski weight i se kam/barabar hai
+                if (j <= i && cost[j - 1] != -1 && dp[i - j] != Integer.MAX_VALUE) {
+                    dp[i] = Math.min(dp[i], dp[i - j] + cost[j - 1]);
                 }
             }
         }
 
-        return dp[w] == INF ? -1 : dp[w];
+        // Agar dp[w] infinity hi raha, matlab exact weight banana possible nahi hai
+        return dp[w] == Integer.MAX_VALUE ? -1 : dp[w];
     }
 }
 ```
