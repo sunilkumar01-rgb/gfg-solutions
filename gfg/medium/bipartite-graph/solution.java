@@ -1,15 +1,8 @@
+import java.util.*;
+
 class Solution {
-    public boolean isBipartite(int V, int[][] edges) {
-        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < V; i++) {
-            adj.add(new ArrayList<>());
-        }
-
-        for (int[] edge : edges) {
-            adj.get(edge[0]).add(edge[1]);
-            adj.get(edge[1]).add(edge[0]);
-        }
-
+    public boolean isBipartite(ArrayList<ArrayList<Integer>> adj) {
+        int V = adj.size();
         int[] color = new int[V];
         Arrays.fill(color, -1);
 
@@ -33,7 +26,6 @@ class Solution {
                 }
             }
         }
-
         return true;
     }
 }
