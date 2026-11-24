@@ -40,9 +40,9 @@ snapshotArr.get(0,0);  // Get the value of array[0] with snap_id = 0, return 5
 ## Solution
 
 **Language:** Java  
-**Runtime:** 83 ms (beats 13.57%)  
-**Memory:** 131.8 MB (beats 45.62%)  
-**Submitted:** 2026-11-24T16:46:24.098Z  
+**Runtime:** 75 ms (beats 20.00%)  
+**Memory:** 131.7 MB (beats 45.98%)  
+**Submitted:** 2026-11-24T16:48:24.153Z  
 
 ```java
 import java.util.*;
