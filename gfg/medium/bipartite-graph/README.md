@@ -4,28 +4,27 @@
 
 ## Problem
 
-Given a Graph with  **V**  vertices (Numbered from  **0**  to  **V-1**) and  **E**  edges. Check whether the graph is bipartite or not.
+Given an undirected graph represented by an adjacency list **adj[][]**, check whether the graph is bipartite or not.
 
-A bipartite graph can be colored with two colors such that no two adjacent vertices share the same color. This means we can divide the graph’s vertices into two distinct sets where:
+A bipartite graph is a graph whose vertices can be colored using two colors such that no two adjacent vertices have the same color. Equivalently, the vertices can be divided into two disjoint sets such that:
 
-- All edges connect vertices from one set to vertices in the other set.
-- No edges exist between vertices within the same set.
+- Every edge connects a vertex from one set to a vertex in the other set.
+- No edge connects two vertices within the same set.
 
  **Examples:** 
 
 ```
-Input: V = 3, edges[][] = [[0, 1], [1,2]]
+Input: adj[][] = [[1], [0, 2], [1]]
 
 Output: true
-Explanation: The given graph can be colored in two colors so, it is a bipartite graph.
-
+Explanation: The vertices can be colored using two colors such that every pair of adjacent vertices has different colors.
 ```
 
 ```
-Input: V = 4, edges[][] = [[0, 3], [1, 2], [3, 2], [0, 2]]
+Input: adj[][] = [[3, 2], [2], [0, 1, 3], [0, 2]]
 
 Output: false 
-Explanation: The given graph cannot be colored in two colors such that color of adjacent vertices differs. 
+Explanation: The vertices form a triangle, so it is not possible to color them using two colors without two adjacent vertices having the same color.
 ```
 
 ## Solution
@@ -33,21 +32,14 @@ Explanation: The given graph cannot be colored in two colors such that color of 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T17:25:07.449Z  
+**Submitted:** 2026-11-24T16:52:12.860Z  
 
 ```java
+import java.util.*;
+
 class Solution {
-    public boolean isBipartite(int V, int[][] edges) {
-        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < V; i++) {
-            adj.add(new ArrayList<>());
-        }
-
-        for (int[] edge : edges) {
-            adj.get(edge[0]).add(edge[1]);
-            adj.get(edge[1]).add(edge[0]);
-        }
-
+    public boolean isBipartite(ArrayList<ArrayList<Integer>> adj) {
+        int V = adj.size();
         int[] color = new int[V];
         Arrays.fill(color, -1);
 
@@ -71,7 +63,6 @@ class Solution {
                 }
             }
         }
-
         return true;
     }
 }
