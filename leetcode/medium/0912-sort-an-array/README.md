@@ -40,9 +40,9 @@ Explanation: Note that the values of nums are not necessarily unique.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 28 ms (beats 43.75%)  
-**Memory:** 86.2 MB (beats 40.25%)  
-**Submitted:** 2026-11-25T17:16:48.877Z  
+**Runtime:** 25 ms (beats 85.24%)  
+**Memory:** 85.8 MB (beats 60.75%)  
+**Submitted:** 2026-11-25T17:24:20.443Z  
 
 ```java
 class Solution {
