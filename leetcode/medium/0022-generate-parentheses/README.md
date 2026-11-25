@@ -35,9 +35,9 @@ Output: ["()"]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 62.77%)  
-**Memory:** 44 MB (beats 87.84%)  
-**Submitted:** 2026-11-25T17:24:05.956Z  
+**Runtime:** 3 ms (beats 18.16%)  
+**Memory:** 44.2 MB (beats 75.06%)  
+**Submitted:** 2026-11-25T17:24:42.237Z  
 
 ```java
 import java.util.*;
