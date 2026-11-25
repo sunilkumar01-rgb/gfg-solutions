@@ -29,35 +29,24 @@ Explanation: For 'H', press '4' two times. For 'E', press '3' two times. For 'Y'
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T17:31:34.733Z  
+**Submitted:** 2026-11-25T17:23:34.323Z  
 
 ```java
 class Solution {
-    public String printSequence(String s) {
-        String[] keypad = {
-            "2", "22", "222",  // A, B, C
-            "3", "33", "333",  // D, E, F
-            "4", "44", "444",  // G, H, I
-            "5", "55", "555",  // J, K, L
-            "6", "66", "666",  // M, N, O
-            "7", "77", "777", "7777", // P, Q, R, S
-            "8", "88", "888",  // T, U, V
-            "9", "99", "999", "9999" // W, X, Y, Z
-        };
+    String printSequence(String S) {
+        String[] str = {"2", "22", "222", "3", "33", "333", "4", "44", "444", 
+                        "5", "55", "555", "6", "66", "666", "7", "77", "777", "7777", 
+                        "8", "88", "888", "9", "99", "999", "9999"};
+        StringBuilder sb = new StringBuilder();
 
-        StringBuilder result = new StringBuilder();
-
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
-            if (ch == ' ') {
-                result.append("0");
+        for (int i = 0; i < S.length(); i++) {
+            if (S.charAt(i) == ' ') {
+                sb.append("0");
             } else {
-                result.append(keypad[ch - 'A']);
+                sb.append(str[S.charAt(i) - 'A']);
             }
         }
-
-        return result.toString();
+        return sb.toString();
     }
 }
 ```
