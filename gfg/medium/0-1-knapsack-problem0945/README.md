@@ -35,24 +35,24 @@ Explanation: Choose the third item (value 30, weight 2) and the last item (value
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T13:07:52.542Z  
+**Submitted:** 2026-11-25T17:13:31.385Z  
 
 ```java
 class Solution {
-    public int knapsack(int W, int val[], int wt[]) {
+    static int knapsack(int W, int val[], int wt[]) {
         int n = val.length;
         int[][] dp = new int[n + 1][W + 1];
 
         for (int i = 1; i <= n; i++) {
             for (int w = 1; w <= W; w++) {
                 if (wt[i - 1] <= w) {
-                    dp[i][w] = Math.max(val[i - 1] + dp[i - 1][w - wt[i - 1]], dp[i - 1][w]);
+                    dp[i][w] = Math.max(val[i - 1] + dp[i - 1][w - wt[i - 1]], 
+                                        dp[i - 1][w]);
                 } else {
                     dp[i][w] = dp[i - 1][w];
                 }
             }
         }
-
         return dp[n][W];
     }
 }
