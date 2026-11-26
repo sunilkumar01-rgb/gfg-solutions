@@ -1,23 +1,22 @@
 class Solution {
     public int rowWithMax1s(int[][] arr) {
-        int maxRow = -1;
         int maxCount = 0;
+        int ansRow = -1;
+        int cols = arr[0].length;
 
         for (int i = 0; i < arr.length; i++) {
-            int count = 0;
-
-            for (int j = 0; j < arr[i].length; j++) {
+            int currentCount = 0;
+            for (int j = 0; j < cols; j++) {
                 if (arr[i][j] == 1) {
-                    count++;
+                    currentCount = cols - j; // Sorted hai, toh baaki sab 1 hi honge
+                    break;
                 }
             }
-
-            if (count > maxCount) {
-                maxCount = count;
-                maxRow = i;
+            if (currentCount > maxCount) {
+                maxCount = currentCount;
+                ansRow = i;
             }
         }
-
-        return maxRow;
+        return ansRow;
     }
 }
