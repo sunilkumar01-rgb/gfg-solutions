@@ -33,30 +33,29 @@ Explanation: No row contains any 1s, so the output is -1.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T17:32:01.669Z  
+**Submitted:** 2026-11-26T16:39:12.968Z  
 
 ```java
 class Solution {
     public int rowWithMax1s(int[][] arr) {
-        int maxRow = -1;
         int maxCount = 0;
+        int ansRow = -1;
+        int cols = arr[0].length;
 
         for (int i = 0; i < arr.length; i++) {
-            int count = 0;
-
-            for (int j = 0; j < arr[i].length; j++) {
+            int currentCount = 0;
+            for (int j = 0; j < cols; j++) {
                 if (arr[i][j] == 1) {
-                    count++;
+                    currentCount = cols - j; // Sorted hai, toh baaki sab 1 hi honge
+                    break;
                 }
             }
-
-            if (count > maxCount) {
-                maxCount = count;
-                maxRow = i;
+            if (currentCount > maxCount) {
+                maxCount = currentCount;
+                ansRow = i;
             }
         }
-
-        return maxRow;
+        return ansRow;
     }
 }
 ```
