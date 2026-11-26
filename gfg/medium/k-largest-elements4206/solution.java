@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public ArrayList<Integer> kLargest(int[] arr, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
@@ -5,7 +7,7 @@ class Solution {
         for (int num : arr) {
             minHeap.add(num);
             if (minHeap.size() > k) {
-                minHeap.poll();
+                minHeap.poll(); // Chhota element hatao
             }
         }
 
