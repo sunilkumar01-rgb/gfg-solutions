@@ -33,9 +33,11 @@ Explanation: 1st Largest element in the array is 23.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T18:06:10.685Z  
+**Submitted:** 2026-11-26T16:36:20.397Z  
 
 ```java
+import java.util.*;
+
 class Solution {
     public ArrayList<Integer> kLargest(int[] arr, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
@@ -43,7 +45,7 @@ class Solution {
         for (int num : arr) {
             minHeap.add(num);
             if (minHeap.size() > k) {
-                minHeap.poll();
+                minHeap.poll(); // Chhota element hatao
             }
         }
 
