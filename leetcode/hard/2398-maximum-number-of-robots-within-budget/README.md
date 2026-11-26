@@ -47,9 +47,9 @@ Explanation: No robot can be run that does not exceed the budget, so we return 0
 ## Solution
 
 **Language:** Java  
-**Runtime:** 24 ms (beats 85.83%)  
-**Memory:** 70.7 MB (beats 78.54%)  
-**Submitted:** 2026-11-26T16:54:34.478Z  
+**Runtime:** 23 ms (beats 93.52%)  
+**Memory:** 71.6 MB (beats 58.30%)  
+**Submitted:** 2026-11-26T16:58:45.061Z  
 
 ```java
 import java.util.ArrayDeque;
