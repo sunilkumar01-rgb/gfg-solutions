@@ -1,12 +1,19 @@
+import java.util.HashMap;
+
 class Solution {
-    int countPairs(int[] arr, int k) {
+    int countPairs(int arr[], int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int count = 0;
 
         for (int num : arr) {
-            if (map.containsKey(k - num)) {
-                count += map.get(k - num);
+            int complement = target - num;
+
+            // Agar complement pehle mil chuka hai, toh utne pairs banenge
+            if (map.containsKey(complement)) {
+                count += map.get(complement);
             }
+
+            // Current number ko map me add karo
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
