@@ -1,24 +1,29 @@
+import java.util.Arrays;
+
 class Solution {
-    static int minPlatform(int arr[], int dep[]) {
+    public int minPlatform(int[] arr, int[] dep) {
+        // Dono arrays ko sort kar liya taaki chronological order me process kar sakein
         Arrays.sort(arr);
         Arrays.sort(dep);
 
-        int i = 1, j = 0;
+        int n = arr.length;
         int platforms = 1;
-        int ans = 1;
+        int maxPlatforms = 1;
+        int i = 1, j = 0;
 
-        while (i < arr.length && j < dep.length) {
-            if (arr[i] <= dep[j]) {
+        while (i < n && j < n) {
+            // Agar next train aane se pehle pichli train chali gayi (arr[i] > dep[j])
+            if (arr[i] > dep[j]) {
+                platforms--; // Ek platform khali ho gaya
+                j++;
+            } else {
+                // Train aayi par koi khali nahi, naya platform chahiye
                 platforms++;
                 i++;
-            } else {
-                platforms--;
-                j++;
             }
-
-            ans = Math.max(ans, platforms);
+            maxPlatforms = Math.max(maxPlatforms, platforms);
         }
 
-        return ans;
+        return maxPlatforms;
     }
 }
