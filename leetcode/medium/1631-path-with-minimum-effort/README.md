@@ -54,9 +54,9 @@ Explanation: This route does not require any effort.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 41 ms (beats 78.64%)  
+**Runtime:** 40 ms (beats 87.07%)  
 **Memory:** 46.8 MB (beats 98.64%)  
-**Submitted:** 2026-11-27T18:03:57.580Z  
+**Submitted:** 2026-11-27T18:09:29.388Z  
 
 ```java
 import java.util.*;
